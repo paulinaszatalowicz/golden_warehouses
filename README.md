@@ -24,7 +24,7 @@ ELSE
     "fulfilled more than 60% of orders"
 END AS fulfillment_summary
 FROM 
-    `llaallala.warehouse_orders.Orders` Warehouse
+    warehouse_orders.Orders Warehouse
 LEFT JOIN warehouse_orders.orders Orders
     ON Orders.warehouse_id = Warehouse.warehouse_id
 GROUP BY 
